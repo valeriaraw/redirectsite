@@ -33,7 +33,7 @@ const CONFIG = {
    * true  — если пользователь во встроенном браузере, покажется сообщение "Откройте в браузере".
    * false — проверка отключена, редирект произойдёт сразу.
    */
-  ENABLE_WEBVIEW_CHECK: false,
+  ENABLE_WEBVIEW_CHECK: true,
 
 
   /**
@@ -57,7 +57,7 @@ const CONFIG = {
    * true  — сообщение будет показано.
    * false — даже если пользователь в WebView, скрипт попытается редиректить (на свой страх и риск).
    */
-  WEBVIEW_MESSAGE: false,
+  WEBVIEW_MESSAGE: true,
 
 
   /**
@@ -178,3 +178,4 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
+

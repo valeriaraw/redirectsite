@@ -108,8 +108,8 @@ function getLinks() {
       };
     case "custom":
       return {
-        appUrl: CUSTOM_LINK,
-        webUrl: CUSTOM_LINK
+        appUrl: "https://valeriaraw.com/",
+        webUrl: "https://valeriaraw.com/"
       };
     default:
       return { appUrl: "", webUrl: "" };
@@ -178,5 +178,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
+
 
 

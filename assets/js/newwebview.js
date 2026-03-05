@@ -25,7 +25,7 @@ const CONFIG = {
    * Своя кастомная ссылка. Используется только если PLATFORM = "custom".
    * Например: "https://valeriaraw.com/"
    */
-  CUSTOM_LINK: "",
+  CUSTOM_LINK: "https://valeriaraw.com/",
 
 
   /**
@@ -176,4 +176,5 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!CONFIG.DISABLE_REDIRECT) {
     redirectOrLoad();
   }
+
 });

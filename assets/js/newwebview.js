@@ -117,11 +117,6 @@ function getLinks() {
 }
 
 function showWebViewWarning() {
-
-  if (window.cfBeacon) {
-    cfBeacon('event', 'webview');
-  }
-
   const msg = document.createElement("div");
   msg.innerHTML = `
     <div style="padding: 20px; font-family: sans-serif; text-align: center;">
@@ -162,13 +157,9 @@ function redirectOrLoad() {
   }
 
   if (FALLBACK_TO_WEB) {
-  setTimeout(() => {
-
-    if (window.cfBeacon) {
-      cfBeacon('event', 'browser');
-    }
-
-    window.location.href = webUrl;
+    setTimeout(() => {
+      window.location.href = webUrl;
+    }, FALLBACK_TIMEOUT);
   }
 }
 
@@ -187,8 +178,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
-
-
 
 
 

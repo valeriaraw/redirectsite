@@ -49,7 +49,7 @@ const CONFIG = {
    * true  — через указанное время произойдёт переход на web-версию.
    * false — ничего не произойдёт, если приложение не открылось.
    */
-  FALLBACK_TO_WEB: true,
+  FALLBACK_TO_WEB: false,
 
 
   /**
@@ -178,4 +178,5 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
+
 
